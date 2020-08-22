@@ -1,0 +1,437 @@
+/* Css vaiables check video */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+:root {
+    --primary: #f2f2f2;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(47, 65, 230, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Baloo Tamma 2', cursive;
+    color: var(--dark);
+}
+
+body {
+    
+    margin: 10px 10px;
+    line-height: 1.4em;
+    
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,94,9,1) 11%, rgba(0,212,255,1) 100%);
+background-repeat: no-repeat;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6em 1.3em;
+    text-decoration: none;
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin: 0;
+    }
+    .logo h1 {
+        font-size: 4em;
+    }
+
+
+/* Navigation */
+.main-nav ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-nav a {
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.4em;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1em;
+    box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+    background: var(--dark);
+    color: var(--light);
+}
+
+/* Header main */
+.header-main {
+    display: grid;
+   
+}
+
+.header-text {
+    height: 520px;
+    background: url(/images/zac-durant-_6HzPU9Hyfg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.header-text h1 {
+    font-size: 3em;
+    margin-bottom: 5;
+    color: var(--light);
+    background:rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+
+.header-text p {
+    font-size: 1.3em;
+    line-height: 1.1em;
+    margin-top: 0;
+    color: var(--light);
+    }
+/* Boxes */
+.boxes {
+    background: var(--primary);
+    display: grid;
+    grid-gap: 20px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box  {
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5em 2em;
+    box-shadow: var(--shadow);
+}
+
+.img-banner {
+    width: 100%;
+    height: 500px;
+    background: url(/images/board.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.info {
+    border: 1px #ccc solid;
+    padding: 10px;    
+
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3em;
+    
+  }
+  .info h2 {
+    text-align: center;
+    font-size: 2em;
+    
+  }
+  .info ul {
+    padding: 0px;
+    padding-left: 20px;
+    list-style: none;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info li {
+    padding-bottom: 10px;
+    border-bottom: dotted 1px #333;
+    list-style-image: url(/images/check1.png)
+} 
+
+/* Portfolio */
+.portfolio {
+    border: 6px solid black;
+    padding: 10px;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+/* Testimonials */
+.testi-boxes {
+    display: grid;
+    grid-gap: 20px;
+    
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.testi-boxes img {
+    width: 100%;
+    border-radius: 100px;
+    box-shadow: var(--shadow);
+}
+
+.testi-boxes {
+    padding: 0 25px;
+    margin-bottom: 30px;
+    display: block;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 35px;
+    grid-row-gap: 0px;
+}
+
+.testi-boxes img {
+    margin-bottom: 20px;
+
+}
+.testi-boxes img {
+    width: 30%;
+    border-radius: 100%;
+}
+
+/* Form nieuwsbrief moet nog verder stylen 
+.my-form {
+    border: 3px solid black;
+    padding: 10px;
+    background: #eee;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 10px;
+}*/
+
+
+/* Footer */
+footer {
+    margin-top: 2em;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1em;
+}
+
+/* Form contact moet nog verder stylen 
+.form {
+    padding: 20px;
+    border: 1px solid black;
+    text-align: left;
+    background: lightgray;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 20px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}*/
+
+/* new contact form */
+* {
+    box-sizing: border-box;
+}
+
+.container-from{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+.company-info ul {
+    list-style: none;
+    padding: 0;
+    }
+.brand {
+text-align: center;
+}
+.brand span, .logo-subtitle span {
+    color: #fff;
+}
+.wrapper {
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+.wrapper > * {
+    padding: 1em;
+}
+.company-info {
+    background: #c9e6ff;
+}
+.company-info h3, .company-info ul {
+    text-align: left;
+    margin: 0 0 1em 0;
+}
+.contact {
+    background: #f9feff;
+}
+/* Form styles */
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.contact form label {
+    display: block;
+}
+.contact form p {
+    margin: 0;
+}
+.contact form .full {
+    grid-column: 1 / 3;
+}
+.contact form input, .contact form textarea, .contact form button {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #c9e6ff;
+}
+.contact form button {
+    background: #c9e6ff;
+    border: 0;
+    text-transform: uppercase;
+}
+.contact form button:hover, .contact form button:focus {
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+.fa {
+    padding: 0 10px 0 0;
+
+}
+/* Newsletter */
+.newsletter {
+    background: #f9feff;
+}
+/* Form styles */
+.newsletter form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.newsletter form label {
+    display: block;
+}
+.newsletter form p {
+    margin: 0;
+}
+.newsletter form .full {
+    grid-column: 1 / 3;
+}
+.newsletter form input, .newsletter form textarea, .newsletter form button {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #c9e6ff;
+}
+.newsletter form button {
+    background: #c9e6ff;
+    border: 0;
+    text-transform: uppercase;
+}
+.newsletter form button:hover, .newsletter form button:focus {
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+
+
+/* Embeded youtube video */
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.team {
+    color: white;
+}
+
+/* Media Queries */
+@media(max-width: 700px) {
+    .logo h1 {
+        font-size: 2.4em;
+}
+    .header-text h1 {
+        font-size: 2.2em;
+        line-height: 1.8em;
+        background:rgba(0, 0, 0, 0.5);
+        padding: 5px;
+}
+
+    .main-nav ul {
+        grid-template-columns: 1fr;
+}
+
+    .info {
+        grid-template-columns: 1fr;
+}
+
+    .info .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+}
+      .testi-boxes {
+       grid-template-columns: repeat(2, 1fr);
+       }
+       /* .form { 
+        grid-template-columns: 1fr;
+       }
+       .form-h2 {
+        color: white;
+       }*/
+}
+
+/* Lagre screens new contact form */
+@media (min-width:700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .wrapper > * {
+        padding: 2em;
+    }
+    .company-info h1, .company-info h3, .company-info ul, .brand {
+        text-align: left;
+    }
+ }
